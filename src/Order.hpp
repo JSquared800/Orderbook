@@ -2,7 +2,8 @@
 #include <ctime>
 
 struct Order {
-    int id;
+    int userId;
+    int orderId;
     int amount;
     time_t timestamp;
 };
