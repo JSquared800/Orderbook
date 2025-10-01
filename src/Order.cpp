@@ -1,20 +1,18 @@
 #include "Order.hpp"
 
-class Order {
-  int getUserId() {
+int Order::getUserId() {
     return userId;
-  }
-  int getOrderId() {
+}
+int Order::getOrderId() {
     return orderId;
-  }
-  int getAmount() {
+}
+int Order::getAmount() {
     return amount;
-  }
-  void setAmount(int amt) {
+}
+void Order::setAmount(int amt) {
     amount = amt;
-  }
-  time_t getTimestamp() {
+}
+time_t Order::getTimestamp() {
     return timestamp;
-  }
-};
+}
 
