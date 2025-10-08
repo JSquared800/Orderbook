@@ -1,9 +1,5 @@
 # CMake build
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-Orderbook
+build/
 
 # VSCode
 .vscode/
