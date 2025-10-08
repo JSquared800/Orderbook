@@ -7,8 +7,8 @@
 class Orderbook {
     private:
         int current_order_id = 0;
-        std::map<double, std::vector<Order*>> bid_map;// should be unordered_map
-        std::map<double, std::vector<Order*>> ask_map;// should be unordered_map
+        std::map<double, std::vector<Order*>> bid_map;
+        std::map<double, std::vector<Order*>> ask_map;
         static constexpr double TICK = 0.1;
         double best_bid = std::numeric_limits<double>::max();
         double best_ask = 0;
