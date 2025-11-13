@@ -7,12 +7,16 @@ class Order {
         int userId;
         int orderId;
         int amount;
+        double price;
+        bool side; // True: Bid, False: Ask
         time_t timestamp;
     public:
-        Order(int userId_, int orderId_, int amount_, time_t timestamp_): userId(userId_), orderId(orderId_), amount(amount_), timestamp(timestamp_) {};
+        Order(int userId_, int orderId_, int amount_, double price_, bool side_, time_t timestamp_): userId(userId_), orderId(orderId_), amount(amount_), price(price_), side(side_), timestamp(timestamp_) {};
         int getUserId();
         int getOrderId();
         int getAmount();
+        double getPrice();
+        bool getSide();
         void setAmount(int amt);
         time_t getTimestamp();
         
