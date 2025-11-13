@@ -13,7 +13,6 @@ class Orderbook {
         std::map<double, std::list<std::shared_ptr<Order>>> ask_map;
         // user_id: {order_id: Order}
         std::unordered_map<int, std::unordered_map<int, std::list<std::shared_ptr<Order>>::iterator>> order_history;
-
         static constexpr double TICK = 0.1;
         void walkBidBook(double price, Order& order);
         void walkAskBook(double price, Order& order);
