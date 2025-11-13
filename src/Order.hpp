@@ -17,6 +17,7 @@ class Order {
         int getAmount();
         double getPrice();
         bool getSide();
+        void removeAmount(int amt);
         void setAmount(int amt);
         time_t getTimestamp();
         

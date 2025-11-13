@@ -15,8 +15,6 @@ class Orderbook {
         std::unordered_map<int, std::unordered_map<int, std::list<std::shared_ptr<Order>>::iterator>> order_history;
 
         static constexpr double TICK = 0.1;
-        double best_bid = std::numeric_limits<double>::max();
-        double best_ask = 0;
         void walkBidBook(double price, Order& order);
         void walkAskBook(double price, Order& order);
         // getVolumeAtPrice

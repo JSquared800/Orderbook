@@ -9,6 +9,9 @@ int Order::getOrderId() {
 int Order::getAmount() {
     return amount;
 }
+void Order::removeAmount(int amt) {
+    amount -= amt;
+}
 void Order::setAmount(int amt) {
     amount = amt;
 }
